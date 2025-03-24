@@ -1,0 +1,215 @@
+/* Gaya untuk home section */
+.home-section {
+  background-color: #6f429f;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Menggunakan tinggi penuh layar */
+  overflow: hidden; /* Agar gambar tidak melampaui layar */
+  width: 100vw; /* Pastikan lebar penuh sesuai viewport */
+  box-sizing: border-box; /* Menghindari penambahan padding terhadap lebar elemen */
+  position: relative;
+}
+
+/* Container untuk konten */
+.home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden; /* Mencegah overflow pada konten */
+  box-sizing: border-box; /* Memastikan padding tidak mempengaruhi lebar */
+}
+
+/* Gaya untuk teks di sisi kiri */
+.home-text {
+  width: 45%;
+  color: #ffdfd6;
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box; /* Menghindari overflow karena padding */
+}
+
+.home-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* Tombol CTA */
+.cta-button {
+  background-color: #e3a5c7;
+  color: #6f429f;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 20px;
+  /* Transisi tombol dihilangkan */
+}
+
+.cta-button:hover {
+  background-color: #fff;
+  color: #6f429f;
+}
+
+/* Gaya untuk gambar di sisi kanan */
+.images {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden; /* Pastikan tidak ada elemen yang melampaui */
+  box-sizing: border-box; /* Menghindari masalah dengan padding */
+}
+
+.images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+/* Navigasi tombol */
+.image-navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  z-index: 10;
+}
+
+.nav-button {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: #6f429f;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+  /* Transisi hover tombol dihilangkan */
+}
+
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.nav-button:first-of-type {
+  left: 10px;
+}
+
+.nav-button:last-of-type {
+  right: 10px;
+}
+
+/* Responsif untuk layar besar */
+@media (max-width: 1200px) {
+  .home-text {
+    width: 50%;
+  }
+
+  .images {
+    width: 50%;
+  }
+}
+
+/* Responsif untuk layar sedang */
+@media (max-width: 992px) {
+  .home-content {
+    width: 85%;
+  }
+
+  .home-text h1 {
+    font-size: 2rem;
+  }
+
+  .cta-button {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+
+  .images {
+    width: 60%;
+  }
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .home-text {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .home-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .images {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .images img {
+    border-radius: 20px;
+  }
+
+  .nav-button {
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  .nav-button:first-of-type {
+    left: 5px;
+  }
+
+  .nav-button:last-of-type {
+    right: 5px;
+  }
+}
+
+/* Responsif untuk layar ekstra kecil */
+@media (max-width: 576px) {
+  .home-content {
+    width: 100%;
+  }
+
+  .home-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .images {
+    width: 100%;
+  }
+
+  .nav-button {
+    font-size: 18px;
+    padding: 6px;
+  }
+}
+
+/* Menghindari overflow horizontal pada seluruh halaman */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Menambahkan ini untuk mencegah geser horizontal */
+  box-sizing: border-box;
+}

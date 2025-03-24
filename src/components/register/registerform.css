@@ -1,0 +1,150 @@
+/* CSS untuk RegisterForm */
+
+.register-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #6f429f, #a988cc); /* Gradient background */
+}
+
+.form-container {
+  position: relative;
+  background-color: #ffffff; /* Putih */
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.close-icon {
+  position: absolute;
+  top: -20px; /* Geser ikon ke atas */
+  right: -20px; /* Geser ikon ke kanan */
+  background-color: #ffffff;
+  border: 2px solid #6f429f; /* Warna border */
+  border-radius: 50%; /* Membuat ikon berbentuk lingkaran */
+  padding: 8px;
+  cursor: pointer;
+  color: #6f429f;
+  transition: transform 0.3s, color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+}
+
+.close-icon:hover {
+  transform: scale(1.1); /* Perbesar ikon saat hover */
+  color: #532f79;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Efek hover */
+}
+
+.form-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  background-color: #f1eef4; /* Warna tab pasif */
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6f429f;
+  cursor: pointer;
+  border-radius: 12px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab.active {
+  background: linear-gradient(135deg, #6f429f, #532f79); /* Gradient warna tab aktif */
+  color: #ffffff; /* Putih */
+}
+
+.tab:hover {
+  background-color: #6f429f; /* Hover tab */
+  color: #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f9f8fc; /* Latar belakang input */
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #6f429f;
+  box-shadow: 0 0 8px rgba(111, 66, 159, 0.5);
+}
+
+.submit-button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff; /* Putih */
+  background: linear-gradient(135deg, #6f429f, #532f79);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.submit-button:hover {
+  background: linear-gradient(135deg, #532f79, #6f429f);
+  transform: scale(1.02);
+}
+
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #6f429f;
+}
+
+p a {
+  text-decoration: none;
+  color: #6f429f;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+p a:hover {
+  color: #532f79; /* Warna hover */
+}
+
+/* Responsivitas */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .tabs {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tab {
+    margin: 0;
+    width: 100%;
+  }
+}

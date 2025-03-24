@@ -1,0 +1,121 @@
+.edit-user-page {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.edit-user-page h2 {
+  font-size: 24px;
+  color: #6f429f;
+  text-align: center;
+}
+
+.edit-user-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.password-input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-input-wrapper input {
+  width: 100%;
+}
+
+.toggle-password-button {
+  position: absolute;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.submit-button {
+  background-color: #6f429f;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #5a2e7a;
+}
+
+.error-message {
+  color: #f44336;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.update-button,
+.cancel-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.update-button {
+  background-color: #6f429f;
+  color: #fff;
+}
+
+.update-button:hover {
+  background-color: #5a2e7a;
+  transform: translateY(-2px); /* Animasi mengangkat tombol */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.cancel-button:hover {
+  background-color: #d32f2f;
+  transform: translateY(-2px); /* Animasi mengangkat tombol */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.update-button:active,
+.cancel-button:active {
+  transform: translateY(0); /* Kembali ke posisi awal saat diklik */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

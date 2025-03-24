@@ -1,0 +1,89 @@
+.footer-section {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  font-size: 24px;
+  color: #6f429f;
+  margin-bottom: 10px;
+}
+
+.footer-address {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.footer-contact a {
+  color: #6f429f;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #482a6d;
+}
+
+.footer-right a {
+  font-size: 14px;
+  margin-right: 15px;
+  color: #6f429f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.footer-right a:hover {
+  color: #482a6d;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-left,
+  .footer-right {
+    align-items: center;
+  }
+}
+.footer-icon {
+  margin-right: 8px;
+  vertical-align: middle;
+}

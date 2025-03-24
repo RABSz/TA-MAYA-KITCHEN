@@ -1,0 +1,333 @@
+/* Profil Container */
+.profile-container {
+  background-color: #f7f7f7;
+  width: 40%; /* Mengurangi lebar menjadi 50% */
+  margin: 50px auto;
+  padding: 30px 30px 60px; /* Menambah padding bawah lebih banyak */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  position: relative; /* Agar tombol X bisa diposisikan di pojok kanan atas */
+}
+
+/* Tombol X untuk kembali ke Home */
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #6f429f; /* Warna ungu */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  color: #333; /* Mengubah warna menjadi hitam saat hover */
+}
+
+/* Title */
+.profile-title {
+  text-align: center;
+  color: #6f429f;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  border-top: 5px solid #6f429f;
+  min-height: 350px; /* Menambahkan tinggi minimal agar lebih panjang */
+}
+
+/* Profile Header */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-icon {
+  font-size: 110px; /* Ukuran ikon profil lebih kecil */
+  color: #6f429f;
+  margin-bottom: 15px;
+}
+
+.profile-name {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Ikon Histori Pembelian */
+.purchase-history {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.history-icon {
+  font-size: 20px; /* Ukuran ikon histori lebih kecil */
+  color: #6f429f;
+  margin-right: 10px;
+  margin-top: -40px;
+}
+
+.purchase-history span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Profile Information */
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profile-info p {
+  font-size: 20px; /* Ukuran teks lebih besar */
+  margin: 11px 0;
+  text-align: center; /* Membuat teks rata tengah */
+  color: #000000;
+  padding-left: 0; /* Menghilangkan padding kiri */
+  width: 100%;
+}
+
+.profile-info strong {
+  color: #6f429f;
+}
+
+/* Tombol Edit Profile */
+.edit-btn {
+  background-color: #6f429f;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #5a2b83;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal Content */
+.modal-content {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 450px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tombol X untuk menutup modal */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 30px;
+  color: #6f429f; /* Warna ungu */
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #333; /* Mengubah warna menjadi hitam saat hover */
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Form Elements */
+form label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 6px;
+  align-self: flex-start;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  border-color: #6f429f;
+  outline: none;
+}
+
+/* Buttons */
+.save-btn,
+.cancel-btn {
+  margin-top: 15px;
+  padding: 14px 28px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 25px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.save-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+  margin-top: 10px;
+}
+
+.save-btn:hover {
+  background-color: #218838;
+}
+
+.cancel-btn:hover {
+  background-color: #c82333;
+}
+
+/* Transaction History Popup */
+.transaction-history {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Meningkatkan kegelapan background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Modal Content for History */
+.transaction-history.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.transaction-history .history-modal-content {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  max-height: 80%;
+  position: relative;
+}
+
+/* History Modal Header */
+.history-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.history-modal-header h2 {
+  color: #333;
+  font-size: 24px;
+  margin: 0;
+}
+
+.history-modal-header .close-btn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #6f429f;
+  cursor: pointer;
+}
+
+.history-modal-header .close-btn:hover {
+  color: #333;
+}
+
+/* Tombol Close pada Popup */
+.history-modal-header .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #6f429f; /* Warna ungu */
+  cursor: pointer;
+}
+
+.history-modal-header .close-btn:hover {
+  color: #333;
+}
+
+/* Transaction List */
+.transaction-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transaction-list li {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-list li p {
+  margin: 8px 0;
+  color: #333;
+}
+
+.transaction-list li p strong {
+  color: #6f429f;
+}

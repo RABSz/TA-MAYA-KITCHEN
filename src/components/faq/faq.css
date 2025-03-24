@@ -1,0 +1,110 @@
+.svg-container {
+  width: 105%;
+
+  top: 0;
+  position: absolute;
+  left: 0;
+}
+
+.faq-section {
+  background-color: #ffffff; /* Warna latar belakang lembut */
+  padding-top: 600px; /* Padding atas dan bawah, dengan sedikit margin samping untuk layar kecil */
+  padding-bottom: 100px;
+  position: relative; /* Mengatur posisi elemen di dalamnya */
+  text-align: center; /* Rata tengah untuk teks */
+  width: 100vw; /* Pastikan kontainer juga memiliki lebar penuh */
+  overflow: hidden; /* Hindari elemen anak keluar dari kontainer */
+}
+
+.faq-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600; /* Semi-bold untuk judul */
+  font-size: 2.5rem;
+  color: #6f429f;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Bayangan lebih tegas saat hover */
+  transform: scale(1.02); /* Efek zoom ringan */
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600; /* Semi-bold untuk header */
+  font-size: 1.3rem;
+  color: #252525;
+  background-color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.faq-header:hover {
+  background-color: #ffdfd6; /* Latar belakang oranye lembut */
+  color: #6f429f; /* Warna teks berubah saat hover */
+}
+
+.faq-icon {
+  font-size: 1.5rem; /* Ikon lebih besar */
+  color: #6f429f;
+  transition: transform 0.4s;
+}
+
+.faq-answer {
+  padding: 15px 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; /* Regular untuk jawaban */
+  font-size: 1.1rem;
+  color: #000000;
+  line-height: 1.8; /* Jarak antar baris lebih lega */
+  background-color: #ffffff;
+  transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  opacity: 0;
+  max-height: 0;
+}
+
+.faq-item.active .faq-answer {
+  opacity: 1;
+  max-height: 200px; /* Membuka jawaban */
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg); /* Ikon berputar saat aktif */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 2rem; /* Ukuran judul lebih kecil di layar kecil */
+  }
+
+  .faq-header {
+    font-size: 1.2rem; /* Ukuran pertanyaan lebih kecil di layar kecil */
+    padding: 15px 20px;
+  }
+
+  .faq-answer {
+    font-size: 1rem; /* Ukuran teks jawaban lebih kecil */
+    padding: 10px 15px;
+  }
+}

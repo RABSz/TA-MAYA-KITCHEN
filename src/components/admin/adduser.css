@@ -1,0 +1,103 @@
+.add-user-page {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.add-user-page h2 {
+  font-size: 24px;
+  color: #6f429f;
+  text-align: center;
+}
+
+.add-user-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: #6f429f;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #5a2e7a;
+}
+
+.error-message {
+  color: #f44336;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.password-group {
+  position: relative;
+}
+
+.password-input-wrapper {
+  position: relative;
+}
+
+.password-input-wrapper input {
+  width: 100%;
+  padding-right: 40px; /* Memberi ruang untuk ikon */
+}
+
+.toggle-password-button {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Jarak dari sisi kanan */
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px; /* Ukuran ikon */
+  color: #6f429f; /* Warna ikon */
+  padding: 5px;
+  outline: none;
+  transition: color 0.3s ease;
+}
+
+.toggle-password-button:hover {
+  color: #5a2e7a;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.cancel-button:hover {
+  background-color: #d32f2f;
+}

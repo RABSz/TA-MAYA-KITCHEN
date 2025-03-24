@@ -1,0 +1,109 @@
+/* Gaya untuk about section */
+.about-section {
+  background-color: #ffffff; /* Warna latar belakang lembut */
+  padding-top: 0; /* Padding atas dan bawah, dengan sedikit margin samping untuk layar kecil */
+  padding-bottom: 400px;
+  position: relative; /* Mengatur posisi elemen di dalamnya */
+  text-align: center; /* Rata tengah untuk teks */
+  width: 100vw; /* Pastikan kontainer juga memiliki lebar penuh */
+  overflow: hidden; /* Hindari elemen anak keluar dari kontainer */
+}
+
+/* Gaya untuk SVG */
+.svg-top {
+  position: absolute;
+  top: 0; /* Pastikan SVG berada di bawah */
+  left: 0;
+  width: 100%; /* Pastikan SVG mengambil lebar penuh */
+  z-index: 1; /* Tetap di bawah konten */
+  transform: translateY(1px); /* Hindari garis putus antara About dan Produk */
+}
+
+/* Gaya untuk SVG bagian bawah */
+.svg-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Pastikan SVG mengambil lebar penuh */
+  z-index: 1; /* Tetap di bawah konten About */
+  transform: translateY(1px); /* Hindari garis putus antara About dan Produk */
+}
+
+/* Konten about */
+.about-content {
+  display: flex; /* Susun konten secara horizontal */
+  flex-direction: column; /* Ubah menjadi kolom */
+  justify-content: center; /* Pusatkan konten secara vertikal */
+  align-items: center; /* Pusatkan konten secara horizontal */
+  width: 90%; /* Lebar konten, sedikit lebih lebar untuk lebih banyak ruang */
+  max-width: 1200px; /* Maksimal lebar konten untuk menjaga proporsi */
+  margin: 0 auto; /* Pusatkan konten */
+  position: relative; /* Pengaturan posisi yang lebih baik */
+  z-index: 10; /* Pastikan di atas SVG */
+}
+
+/* Gaya untuk teks dalam about */
+.about-text {
+  width: 100%; /* Mengambil lebar penuh */
+  padding: 20px; /* Padding untuk ruang di dalam */
+  color: #ffffff; /* Warna teks */
+}
+
+.about-text h2 {
+  font-size: 2.5rem; /* Ukuran font untuk judul */
+  font-weight: 700; /* Menebalkan teks */
+  margin-bottom: 20px; /* Jarak bawah judul */
+  color: #6f429f; /* Warna judul */
+  line-height: 1.2; /* Jarak antar baris judul */
+}
+
+.about-text p {
+  font-size: 1.1rem; /* Ukuran font untuk paragraf */
+  line-height: 1.8; /* Jarak antar baris */
+  margin-bottom: 20px; /* Jarak antar paragraf */
+  color: #252525; /* Warna paragraf */
+  max-width: 800px; /* Maksimal lebar teks agar tidak terlalu lebar */
+  margin-left: auto; /* Rata kiri */
+  margin-right: auto; /* Rata kanan */
+}
+
+/* Gaya untuk gambar dalam about */
+.about-images {
+  display: flex; /* Susun gambar secara horizontal */
+  justify-content: center; /* Pusatkan gambar secara horizontal */
+  gap: 20px; /* Jarak antar gambar */
+  margin-top: 30px; /* Jarak antara teks dan gambar */
+}
+
+.about-images img {
+  width: 100%; /* Gambar menyesuaikan ukuran kontainer */
+  max-width: 300px; /* Maksimal lebar setiap gambar */
+  height: auto; /* Menjaga proporsi gambar */
+  object-fit: cover; /* Menjaga gambar agar tidak terdistorsi */
+  border-radius: 8px; /* Menambahkan sudut tumpul */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan lembut pada gambar */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .about-content {
+    padding: 10px; /* Kurangi padding pada layar kecil */
+  }
+
+  .about-text h2 {
+    font-size: 2rem; /* Ukuran font lebih kecil untuk judul */
+  }
+
+  .about-text p {
+    font-size: 1rem; /* Ukuran font lebih kecil untuk paragraf */
+  }
+
+  .about-images {
+    flex-direction: column; /* Ubah gambar jadi vertikal di layar kecil */
+    align-items: center; /* Pusatkan gambar */
+  }
+
+  .about-images img {
+    max-width: 90%; /* Gambar lebih fleksibel di layar kecil */
+  }
+}

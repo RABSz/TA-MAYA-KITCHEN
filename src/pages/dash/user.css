@@ -1,0 +1,98 @@
+.user-page {
+  padding: 20px;
+}
+
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-header h2 {
+  font-size: 24px;
+  color: #6f429f;
+  margin: 0;
+}
+
+.user-add-button {
+  background-color: #6f429f;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+}
+
+.user-add-button:hover {
+  background-color: #5a2e7a;
+}
+
+.user-add-icon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-table th {
+  background-color: #6f429f;
+  color: #fff;
+  font-weight: bold;
+}
+
+.user-table tr:hover {
+  background-color: #f4f4f4;
+}
+
+.user-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.user-edit-button,
+.user-delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.user-edit-button {
+  color: #4caf50;
+}
+
+.user-edit-button:hover {
+  background-color: #e8f5e9;
+}
+
+.user-delete-button {
+  color: #f44336;
+}
+
+.user-delete-button:hover {
+  background-color: #ffebee;
+}

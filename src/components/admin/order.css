@@ -1,0 +1,110 @@
+/* CSS untuk tabel */
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.order-table th,
+.order-table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 10px;
+}
+
+.order-table th {
+  background-color: #6f429f;
+  color: white;
+  font-weight: 600;
+}
+
+.order-table tr:nth-child(even) {
+  background-color: #f4eafc;
+}
+
+.order-table tr:hover {
+  background-color: #f4f4f4;
+}
+
+/* CSS untuk tombol Edit dan Delete */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit-btnn,
+.delete-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Warna tombol Edit */
+.edit-btnn {
+  background-color: #d4f8d4;
+  color: #2e7d32;
+  border: 1px solid #2e7d32;
+}
+
+.edit-btnn:hover {
+  background-color: #a8e6a8;
+}
+
+/* Warna tombol Delete */
+.delete-btn {
+  background-color: #ffdddd;
+  color: #d32f2f;
+  border: 1px solid #d32f2f;
+}
+
+.delete-btn:hover {
+  background-color: #ffbbbb;
+}
+
+/* Ikon dalam tombol */
+.edit-btn svg,
+.delete-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.page-button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #6f429f;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.page-button:hover {
+  background-color: #5a3085;
+}
+
+.page-button.active {
+  background-color: #3b1d62;
+}
+
+.page-button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}

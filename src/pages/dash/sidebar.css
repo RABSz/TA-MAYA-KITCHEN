@@ -1,0 +1,64 @@
+/* sidebar.css */
+
+.dashboard-sidebar {
+  width: 250px;
+  background-color: #6f429f;
+  color: #ffffff;
+  height: calc(
+    100vh - 80px
+  ); /* Mengurangi tinggi dari 100vh dengan tinggi header */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 80px; /* Memberikan jarak agar tidak tertumpuk dengan header */
+}
+
+.dashboard-sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px; /* Memberikan jarak antara sidebar dan menu */
+}
+
+.dashboard-sidebar nav ul li {
+  margin-bottom: 20px;
+}
+
+.dashboard-sidebar nav ul li a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.dashboard-sidebar nav ul li a:hover {
+  background-color: #5a2e7a;
+  color: #ffffff;
+}
+
+.sidebar-icon {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.dashboard-sidebar .active {
+  background-color: #4e1f75;
+}
+
+@media (max-width: 768px) {
+  .dashboard-sidebar {
+    width: 200px;
+    margin-top: 80px; /* Memberikan jarak pada tampilan mobile */
+  }
+
+  .dashboard-sidebar nav ul li a {
+    font-size: 16px;
+  }
+}
